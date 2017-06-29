@@ -1,0 +1,12 @@
+{% extends "layout.jinja2" %} 
+
+{% block content%}
+<div class="content">
+
+    <form id="scrap-form" action="/" method="post">
+        <input hidden type="text" id="clearwiki" name="clearwiki" value=1 >
+        <input  id="submit-bottom" value="Reset" type="submit">
+    </form>
+    {{url|safe}}
+</div>
+{% endblock content %}
